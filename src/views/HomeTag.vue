@@ -8,12 +8,12 @@ import RwvArticleList from "@/components/ArticleList";
 export default {
   name: "RwvHomeTag",
   components: {
-    RwvArticleList
+   RwvArticleList
   },
   computed: {
-    tag() {
-      return this.$route.params.tag;
-    }
+   tag() {
+    return this.$route.params.tag;
+   }
   }
 };
 </script>

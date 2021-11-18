@@ -10,9 +10,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    home,
-    auth,
-    article,
-    profile
+   home,
+   auth,
+   article,
+   profile
   }
 });

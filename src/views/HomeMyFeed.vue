@@ -8,7 +8,7 @@ import RwvArticleList from "@/components/ArticleList";
 export default {
   name: "rwv-home-my-feed",
   components: {
-    RwvArticleList
+   RwvArticleList
   }
 };
 </script>

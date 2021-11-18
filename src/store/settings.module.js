@@ -9,32 +9,32 @@ export const state = {
 
 export const actions = {
   [FETCH_ARTICLE](context, articleSlug) {
-    return ArticlesService.get(articleSlug)
-      .then(({ data }) => {
-        context.commit(SET_ARTICLE, data.article);
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
+   return ArticlesService.get(articleSlug)
+    .then(({ data }) => {
+      context.commit(SET_ARTICLE, data.article);
+    })
+    .catch(error => {
+      throw new Error(error);
+    });
   },
   [FETCH_COMMENTS](context, articleSlug) {
-    return CommentsService.get(articleSlug)
-      .then(({ data }) => {
-        context.commit(SET_COMMENTS, data.comments);
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
+   return CommentsService.get(articleSlug)
+    .then(({ data }) => {
+      context.commit(SET_COMMENTS, data.comments);
+    })
+    .catch(error => {
+      throw new Error(error);
+    });
   }
 };
 
 /* eslint no-param-reassign: ["error", { "props": false }] */
 export const mutations = {
   [SET_ARTICLE](state, article) {
-    state.article = article;
+   state.article = article;
   },
   [SET_COMMENTS](state, comments) {
-    state.comments = comments;
+   state.comments = comments;
   }
 };
 

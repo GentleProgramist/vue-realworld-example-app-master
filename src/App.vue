@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <RwvHeader />
-    <router-view></router-view>
-    <RwvFooter />
+   <RwvHeader />
+   <router-view></router-view>
+   <RwvFooter />
   </div>
 </template>
 
@@ -13,8 +13,8 @@ import RwvFooter from "@/components/TheFooter";
 export default {
   name: "App",
   components: {
-    RwvHeader,
-    RwvFooter
+   RwvHeader,
+   RwvFooter
   }
 };
 </script>

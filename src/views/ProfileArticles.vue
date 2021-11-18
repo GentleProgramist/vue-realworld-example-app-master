@@ -1,6 +1,6 @@
 <template>
   <div class="profile-page">
-    <RwvArticleList :author="author" :items-per-page="5"></RwvArticleList>
+   <RwvArticleList :author="author" :items-per-page="5"></RwvArticleList>
   </div>
 </template>
 
@@ -10,12 +10,12 @@ import RwvArticleList from "@/components/ArticleList";
 export default {
   name: "RwvProfileArticles",
   components: {
-    RwvArticleList
+   RwvArticleList
   },
   computed: {
-    author() {
-      return this.$route.params.username;
-    }
+   author() {
+    return this.$route.params.username;
+   }
   }
 };
 </script>

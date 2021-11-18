@@ -6,17 +6,17 @@
 export default {
   name: "RwvTag",
   props: {
-    name: {
-      type: String,
-      required: true
-    },
-    className: {
-      type: String,
-      default: "tag-pill tag-default"
-    }
+   name: {
+    type: String,
+    required: true
+   },
+   className: {
+    type: String,
+    default: "tag-pill tag-default"
+   }
   },
   computed: {
-    homeRoute: () => ({ name: "home-tag", params: { tag: name } })
+   homeRoute: () => ({ name: "home-tag", params: { tag: name } })
   }
 };
 </script>
