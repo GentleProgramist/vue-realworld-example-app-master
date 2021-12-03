@@ -89,4 +89,4 @@ These can be changed when the contributors reach a consensus.
 ## Connect
 
 Join us on [Discord](https://discord.gg/NE2jNmg)
-2021.11.29.
+2021.12.02.
